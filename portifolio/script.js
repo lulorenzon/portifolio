@@ -12,7 +12,48 @@ function escrevendoLetra() {
   const titulo = document.querySelector(".digitando");
   ativaLetra(titulo);
 }
+document
+  .querySelector('a[href="#resume"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Impede o comportamento padrão do link
 
+    const targetElement = document.querySelector(this.getAttribute("href"));
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth", // Adiciona o efeito suave de rolagem
+      });
+    }
+  });
+document
+  .querySelector('a[href="#about"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Impede o comportamento padrão do link
+
+    const targetElement = document.querySelector(this.getAttribute("href"));
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth", // Adiciona o efeito suave de rolagem
+      });
+    }
+  });
+document
+  .querySelector('a[href="#portfolio"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Impede o comportamento padrão do link
+
+    const targetElement = document.querySelector(this.getAttribute("href"));
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth", // Adiciona o efeito suave de rolagem
+      });
+    }
+  });
 function ativacaoMenu() {
   const ativaMenu = document.querySelector(".fa-bars");
   const navMenu = document.querySelector("header .navegacao-primaria");
@@ -76,9 +117,9 @@ const listaALL = document.querySelectorAll(".projects_armazenamento ul li");
 const buttonGeral = document.querySelectorAll(".project_navegacao li");
 const buttonALL = document.querySelector(".project_models .all");
 
-listaALL.forEach((item) => {
-  item.classList.add("ativo");
-});
+// listaALL.forEach((item) => {
+//   item.classList.add("ativo");
+// });
 
 function removeClick(index) {
   buttonGeral.forEach((item) => {
@@ -93,38 +134,38 @@ buttonGeral.forEach((event, index) => {
   });
 });
 
-function showLista(lista, buttom = "all") {
-  lista.forEach((item) => {
-    item.classList.remove("ativo");
-  });
+// function showLista(lista, buttom = "all") {
+//   lista.forEach((item) => {
+//     item.classList.remove("ativo");
+//   });
 
-  if (buttom == "design") {
-    lista[0].classList.add("ativo");
-    lista[1].classList.add("ativo");
-  }
-  if (buttom == "graphic") {
-    lista[2].classList.add("ativo");
-    lista[3].classList.add("ativo");
-  }
+//   if (buttom == "design") {
+//     lista[0].classList.add("ativo");
+//     lista[1].classList.add("ativo");
+//   }
+//   if (buttom == "graphic") {
+//     lista[2].classList.add("ativo");
+//     lista[3].classList.add("ativo");
+//   }
 
-  if (buttom == "website") {
-    lista[4].classList.add("ativo");
-    lista[5].classList.add("ativo");
-    lista[6].classList.add("ativo");
-    lista[7].classList.add("ativo");
-  }
+//   if (buttom == "website") {
+//     lista[4].classList.add("ativo");
+//     lista[5].classList.add("ativo");
+//     lista[6].classList.add("ativo");
+//     lista[7].classList.add("ativo");
+//   }
 
-  if (buttom == "all") {
-    lista[0].classList.add("ativo");
-    lista[1].classList.add("ativo");
-    lista[2].classList.add("ativo");
-    lista[3].classList.add("ativo");
-    lista[4].classList.add("ativo");
-    lista[5].classList.add("ativo");
-    lista[6].classList.add("ativo");
-    lista[7].classList.add("ativo");
-  }
-}
+//   if (buttom == "all") {
+//     lista[0].classList.add("ativo");
+//     lista[1].classList.add("ativo");
+//     lista[2].classList.add("ativo");
+//     lista[3].classList.add("ativo");
+//     lista[4].classList.add("ativo");
+//     lista[5].classList.add("ativo");
+//     lista[6].classList.add("ativo");
+//     lista[7].classList.add("ativo");
+//   }
+// }
 
 // buttonGeral.forEach((item) => {
 //   item.addEventListener("click", (e) => {
