@@ -531,6 +531,7 @@ i.fa-sharp.fa-solid.fa-star {
 .resume_gerenico .experience_content div.ativo {
   display: block;
   padding: 40px;
+  min-height: 300px
 }
 
 .experience_content ul li.ativo {
@@ -583,14 +584,13 @@ i.fa-sharp.fa-solid.fa-star {
 
 .resume_gerenico .education_content ul li .ativo {
   color: #2f2b2b;
-  min-height: 192px;
 }
 
 .resume_gerenico .education_content div.ativo {
   display: block;
   padding: 40px;
   animation: sobeSecao 0.5s ease-in-out forwards;
-  min-height: 192px;
+  min-height: 300px;
 }
 
 /* SOBRE CURSOS E SKILLS */
