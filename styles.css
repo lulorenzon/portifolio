@@ -374,7 +374,7 @@ main .sobre {
 i.fa-sharp.fa-solid.fa-star {
   color: #fff;
 }
-.sobre_titulo ul li {
+.sobre_titulo ul {
   cursor: pointer;
   border-radius: 6px;
   position: relative;
@@ -387,12 +387,12 @@ i.fa-sharp.fa-solid.fa-star {
   height: 300px;
 }
 
-.sobre_titulo ul li i {
+.sobre_titulo ul a {
   font-size: 2.7rem;
   color: #ff1493;
 }
 
-.sobre_titulo ul li h3 {
+.sobre_titulo ul a h3 {
   color: #fff;
   font-size: 1.6rem;
   font-family: "poppins";
@@ -404,7 +404,7 @@ i.fa-sharp.fa-solid.fa-star {
   font-size: 1.1rem;
 } */
 
-.sobre_titulo li::before {
+.sobre_titulo ul a::before {
   content: "";
   transition: 0.5s ease-in-out;
   border-radius: 6px;
@@ -417,7 +417,7 @@ i.fa-sharp.fa-solid.fa-star {
   border-right: 2px solid transparent;
 }
 
-.sobre_titulo li::after {
+.sobre_titulo ul a::after {
   content: "";
   transition: 0.5s ease-in-out;
   border-radius: 6px;
@@ -430,27 +430,26 @@ i.fa-sharp.fa-solid.fa-star {
   border-left: 2px solid transparent;
 }
 
-.sobre_titulo li:hover::before {
+.sobre_titulo ul a:hover::before {
   width: 100%;
   height: 100%;
   border-top: 2px solid #ff1493;
   border-right: 2px solid #ff1493;
 }
 
-.sobre_titulo li:hover::after {
+.sobre_titulo ul a:hover::after {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid #ff1493;
   border-left: 2px solid #ff1493;
 }
 
-
-.sobre_titulo ul li p{
+.sobre_titulo ul a p {
   color: transparent;
 }
-.sobre_titulo ul li:hover p {
-	color: #f7f7f7 !important;
-	text-shadow: nfour;
+.sobre_titulo ul a:hover p {
+  color: #f7f7f7 !important;
+  text-shadow: nfour;
 }
 /* SOBRE MINHAS EXPERIÊNCIAS */
 
