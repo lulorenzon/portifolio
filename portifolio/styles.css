@@ -178,7 +178,6 @@ main .sobre {
   font-size: 2.5rem;
   color: #ff1493;
   margin-bottom: 15px;
-  font-family: "Berkshire Swash", cursive;
 }
 
 .sobre_titulo p {
@@ -361,12 +360,12 @@ main .sobre {
   display: flex;
 }
 
-.my_services {
+.sobre_titulo {
   padding: 60px;
   color: white;
 }
 
-.my_services ul {
+.sobre_titulo ul {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -375,7 +374,7 @@ main .sobre {
 i.fa-sharp.fa-solid.fa-star {
   color: #fff;
 }
-.my_services ul li {
+.sobre_titulo ul li {
   cursor: pointer;
   border-radius: 6px;
   position: relative;
@@ -386,27 +385,26 @@ i.fa-sharp.fa-solid.fa-star {
   max-width: 300px;
   align-content: center;
   height: 300px;
-  background-color: #222;
 }
 
-.my_services ul li i {
+.sobre_titulo ul li i {
   font-size: 2.7rem;
   color: #ff1493;
 }
 
-.my_services ul li h3 {
+.sobre_titulo ul li h3 {
   color: #fff;
   font-size: 1.6rem;
   font-family: "poppins";
   font-weight: 500;
 }
 
-.my_services ul li p {
+/* .sobre_titulo ul li p {
   color: #707070;
   font-size: 1.1rem;
-}
+} */
 
-.my_services li::before {
+.sobre_titulo li::before {
   content: "";
   transition: 0.5s ease-in-out;
   border-radius: 6px;
@@ -419,7 +417,7 @@ i.fa-sharp.fa-solid.fa-star {
   border-right: 2px solid transparent;
 }
 
-.my_services li::after {
+.sobre_titulo li::after {
   content: "";
   transition: 0.5s ease-in-out;
   border-radius: 6px;
@@ -432,20 +430,28 @@ i.fa-sharp.fa-solid.fa-star {
   border-left: 2px solid transparent;
 }
 
-.my_services li:hover::before {
+.sobre_titulo li:hover::before {
   width: 100%;
   height: 100%;
   border-top: 2px solid #ff1493;
   border-right: 2px solid #ff1493;
 }
 
-.my_services li:hover::after {
+.sobre_titulo li:hover::after {
   width: 100%;
   height: 100%;
   border-bottom: 2px solid #ff1493;
   border-left: 2px solid #ff1493;
 }
 
+
+.sobre_titulo ul li p{
+  color: transparent;
+}
+.sobre_titulo ul li:hover p {
+	color: #f7f7f7 !important;
+	text-shadow: nfour;
+}
 /* SOBRE MINHAS EXPERIÊNCIAS */
 
 .my_resume {
@@ -531,7 +537,7 @@ i.fa-sharp.fa-solid.fa-star {
 .resume_gerenico .experience_content div.ativo {
   display: block;
   padding: 40px;
-  min-height: 300px
+  min-height: 300px;
 }
 
 .experience_content ul li.ativo {

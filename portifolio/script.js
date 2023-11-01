@@ -1,56 +1,59 @@
-function escrevendoLetra() {
-  function ativaLetra(elemento) {
-    const arrTexto = elemento.innerHTML.split("");
-    elemento.innerHTML = "";
-    arrTexto.forEach((letra, i) => {
-      setTimeout(() => {
-        elemento.innerHTML += letra;
-      }, 75 * i);
-    });
+function escrevendoLetra(){
+  function ativaLetra(elemento){
+      const arrTexto = elemento.innerHTML.split('');
+      elemento.innerHTML  = '';
+      arrTexto.forEach((letra, i)=>{
+          setTimeout(()=>{
+              elemento.innerHTML += letra; 
+          }, 75 * i);
+      });
   }
 
-  const titulo = document.querySelector(".digitando");
+  const titulo = document.querySelector('.digitando');
   ativaLetra(titulo);
-}
+} 
+
+ 
+escrevendoLetra();
 document
   .querySelector('a[href="#resume"]')
   .addEventListener("click", function (e) {
-    e.preventDefault(); // Impede o comportamento padrão do link
+    e.preventDefault(); 
 
     const targetElement = document.querySelector(this.getAttribute("href"));
 
     if (targetElement) {
       window.scrollTo({
         top: targetElement.offsetTop,
-        behavior: "smooth", // Adiciona o efeito suave de rolagem
+        behavior: "smooth", 
       });
     }
   });
 document
   .querySelector('a[href="#about"]')
   .addEventListener("click", function (e) {
-    e.preventDefault(); // Impede o comportamento padrão do link
+    e.preventDefault(); 
 
     const targetElement = document.querySelector(this.getAttribute("href"));
 
     if (targetElement) {
       window.scrollTo({
         top: targetElement.offsetTop,
-        behavior: "smooth", // Adiciona o efeito suave de rolagem
+        behavior: "smooth", 
       });
     }
   });
 document
   .querySelector('a[href="#portfolio"]')
   .addEventListener("click", function (e) {
-    e.preventDefault(); // Impede o comportamento padrão do link
+    e.preventDefault(); 
 
     const targetElement = document.querySelector(this.getAttribute("href"));
 
     if (targetElement) {
       window.scrollTo({
         top: targetElement.offsetTop,
-        behavior: "smooth", // Adiciona o efeito suave de rolagem
+        behavior: "smooth", 
       });
     }
   });
