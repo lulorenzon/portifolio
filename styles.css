@@ -22,10 +22,10 @@ body {
 .projects_armazenamento img {
   width: 200px;
   height: 180px;
-  border-radius: 25px;
-  /* transition: 0.3s ease-in-out;
-  cursor: pointer;
-  background-color: #3e3d3d; */
+  /* border-radius: 25px; */
+   transition: 0.3s ease-in-out;
+  /* cursor: pointer;
+  background-color: #3e3d3d; */ 
 }
 
 /* HEADER */
@@ -430,19 +430,20 @@ i.fa-sharp.fa-solid.fa-star {
   border-left: 2px solid transparent;
 }
 
-.sobre_titulo ul a:hover::before {
+.sobre_titulo ul li:hover {
   width: 100%;
   height: 100%;
   border-top: 2px solid #ff1493;
   border-right: 2px solid #ff1493;
-}
-
-.sobre_titulo ul a:hover::after {
-  width: 100%;
-  height: 100%;
   border-bottom: 2px solid #ff1493;
   border-left: 2px solid #ff1493;
 }
+/* 
+.sobre_titulo  ul li :hover {
+  width: 100%;
+  height: 100%;
+
+} */
 
 .sobre_titulo ul a p {
   color: transparent;
@@ -839,7 +840,7 @@ i.fa-sharp.fa-solid.fa-star {
 
 .projects_armazenamento ul li.ativo {
   display: block;
-  animation: animationButton 2s ease-in-out forwards;
+  /* animation: animationButton 2s ease-in-out forwards; */
 }
 
 .projects_armazenamento ul li img {
